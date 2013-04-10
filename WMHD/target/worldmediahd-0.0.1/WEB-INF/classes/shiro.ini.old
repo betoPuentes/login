@@ -1,0 +1,24 @@
+# -----------------------------------------------------------------------------
+# Users and their (optional) assigned roles
+# username = password, role1, role2, ..., roleN
+# -----------------------------------------------------------------------------
+#[users]
+#root = 2bb80d537b1da3e38bd30361aa855686bde0eacd7162fef6a25fe97bf527a25b, admin
+#guest = 84983c60f7daadc1cb8698621f802c0d9f9a3c3c295c810748fb048115c186ec, guest
+#
+# -----------------------------------------------------------------------------
+# Roles with assigned permissions
+# roleName = perm1, perm2, ..., permN
+# -----------------------------------------------------------------------------
+
+#[urls]
+#/** = anon
+#/allowed/** = authcBasic, perms["yes"]
+#/** = authcBasic, perms["no"]
+#/** = authcBasic
+
+[urls]
+#/public/** = anon
+#/stuff/allowed/** = authcBasic, perms["yes"]
+#/** = authcBasic, perms["no"]
+#/** = authcBasic
