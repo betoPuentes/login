@@ -58,6 +58,9 @@ public class AuthenticatedScreen extends VerticalLayout
         this.addComponent(user);
         this.addComponent(perm);
         this.addComponent(logout);
+        
+        this.setSizeFull();
+        this.setStyleName("wallpaper");
     
     }
 }

@@ -54,6 +54,8 @@ public class MyVaadinApplication extends Application implements ApplicationConte
 	@Override
 	public void init()
 	{
+		this.setTheme("wmhd");
+		
 		this.getContext().addTransactionListener(this);
 
 		this.mainWindow = new Window("My Vaadin Application");
